@@ -35,11 +35,11 @@
   (def vecCh (vector 'a 'b 'c 'd))
   (do (println vecInt) (println vecCh) (println))
 
-  (def hmapInt (hash-map 1 1 2 2 3 3 4 4))
-  (def hmapCh (hash-map 'a 'a 'b 'b 'c 'c 'd 'd))
+  (def hmapInt (hash-map 1 1, 2 2, 3 3, 4 4))               ;; commas are wspace but help in maps
+  (def hmapCh (hash-map 'a 'a, 'b 'b, 'c 'c, 'd 'd))
   (def hmapChInt (hash-map 'a 1 'b 2 'c 3 'd 4))
-  (def hmapChStr (hash-map 'd "dddd" 'c "ccc" 'b "bb" 'a "a"))
-  (def smapChStr (sorted-map 'd "dddd" 'c "ccc" 'b "bb" 'a "a"))
+  (def hmapChStr (hash-map 'd "dddd", 'c "ccc", 'b "bb", 'a "a"))
+  (def smapChStr (sorted-map 'd "dddd", 'c "ccc", 'b "bb", 'a "a"))
   (do (println hmapInt) (println hmapCh) (println hmapChInt) (println hmapChStr) (println smapChStr) (println))
 
   (def int-seq (seq [1 2 3]))                               ;; allowable var naming
