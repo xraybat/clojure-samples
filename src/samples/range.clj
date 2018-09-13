@@ -18,7 +18,7 @@
   (println (take 20 (repeat 1)))                            ;; same here
   (println))
 
-;; a useful general sequence
+;; a useful (infinite) general sequence
 (def whole-numbers (iterate inc 1))                         ;; not evaluated, no infinite loop
 
-(println (take 10 whole-numberss))
+(println (take 10 whole-numbers))
